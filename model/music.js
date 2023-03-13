@@ -19,4 +19,4 @@ const musicShema = new mongoose.Schema({
   },
 });
 
-module.exports = mongoose.model("Music", musicShema)
+module.exports = mongoose.model("Music", musicShema);
