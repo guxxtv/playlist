@@ -10,5 +10,18 @@
    <h1>Hello EJS</h1>
 
    <a href="/admin">Administração</a>
+
+   <ul>
+      <% playlist.forEach((music)=>{ %>
+      <li>
+         <h2> <%= music.name%></h2>
+         <p> <%= music.author </p>
+
+      </li>
+      <% }) %>
+
+
+
+   </ul>
 </body>
 </html>

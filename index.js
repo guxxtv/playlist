@@ -13,7 +13,9 @@ app.use(express.urlencoded());
 
 connetToDb();
 
-app.get("/", (req, res) => {
+app.get("/", async (req, res) => {
+  const playlist = await Music.find();
+  console.log(playlist)
   res.render("index");
 });
 
